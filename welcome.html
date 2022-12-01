@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Email</title>
+    <link rel="stylesheet" href="welcome.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex_vert-gap20">
+        <div class="logo_wrapper">
+          <img class="logo" src="/zen-leaf-logo-with-text-67h (1).svg" />
+        </div>
+        <div class="content_wrapper">
+          <div class="flex_vert-gap12">
+            <h1>Hi {{customerName}},</h1>
+            <h3>Welcome to {{storeName}},</h3>
+          </div>
+          <div class="flex_vert-gap12">
+            <p>
+              You've been invited to join {{storeName}} on Sweed. You now have
+              access to the
+              <span><a href="http://store.sweedpos.com">Portal</a></span>,
+              <span><a href="http://cashier.sweedpos.com">Cashier</a></span> and
+              <span><a href="http://help.sweedpos.com">Help Center</a></span
+              >. Please contact your store manager for your login credentials. Click "Learn
+              More" below to view the Sweed knowledge center, and get started
+              learning how Sweed works.
+            </p>
+            <a href="http://help.sweedpos.com">
+              <button class="cat_button" style="margin-top: 12px">
+                Learn More
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="content_wrapper-black">
+          <div class="flex_vert-gap12-align-center">
+            <p class="p-grey-small">
+              All rights reserved. Copyright © 2022 {{storeLegalName}}.
+              {{storeLegalAddress}}.
+            </p>
+            <div class="flex_horz-gap20">
+              <span><a class="a-white-small" href="{{privacyURL}}">Privacy Policy</a></span>
+              <span><a class="a-white-small" href="{{termsURL}}">Terms & Conditions</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
